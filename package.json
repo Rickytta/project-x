@@ -6,8 +6,8 @@
   "scripts": {
     "start": "babel-node src/server.js",
     "dev": "nodemon src/server.js",
-    "build":"babel src/server.js --out-dir es5",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src/server.js --out-dir es5",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -20,12 +20,15 @@
   },
   "homepage": "https://github.com/Rickytta/project-x#readme",
   "dependencies": {
-    "express": "^4.17.1"  
+    "express": "^4.17.1",
+    "heroku": "^7.26.2"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "babel-cli": "^6.26.0",
-    "nodemon": "^1.19.1"
+    "mocha": "^6.1.4",
+    "nodemon": "^1.19.1",
+    "prettier": "1.18.2"
   }
 }
