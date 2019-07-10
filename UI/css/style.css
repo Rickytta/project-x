@@ -29,13 +29,13 @@ a{
     padding-left: 50px;
 }
 .top-icon{
-    display: grid;
+    display: flex;
     grid-template-columns: 20px 20px 20px;
     grid-gap: 50px;
     margin-top: 8px;
 }
 .img-icon img{
-    width: 100%;
+    width: 10%;
 }
 .top-search{
     position: absolute;
@@ -52,7 +52,7 @@ a{
 .search-input{
     height: 50px;
     border: none;
-    background: none;
+    background:rgb(140, 154, 236);
     color: var(--white-color);
     padding: 5px;
     box-shadow: none;
@@ -106,8 +106,7 @@ a{
   .title h1{
       font-family: "Fredoka one",cursive;
       font-weight: bold;
-      float: left;
-      margin-bottom: 28px
+      text-justify: distribute;
   }
   .navigation li{
       float: left;
@@ -350,7 +349,7 @@ width: 3.5%;
     font-family: "comfortaa",cursive;
     text-align: center;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 30px;
     padding-left: 20px;
     padding-right: 20px;
     background: #ddd;
@@ -513,39 +512,85 @@ footer h1{
     margin-left: 30px;
 }
 
-/* SIGNUP */
+/* SIGNUP  and SIGN IN*/
+.container{
+    width: 450px;
+    margin: 30px auto;
+  }
+  
+  .input:focus{
+    border: 2px solid #34b3a0;
+  }
+  .container{
+    width: 450px;
+    margin: 30px auto;
+  }
+ 
+  .input:focus{
+    border: 2px solid #34b3a0;
+  }
+  
+  .btn{
+    width: 100%;
+    background: #34b3a0;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  
+  span a{
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .btn{
+    width: 100%;
+    background: #34b3a0;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bol
+  
 input::-webkit-input-placeholder {
     color: #909090;
 }
-.signup-content{
+.signup-content .signin-content{
     background-image: url(../images/houses/luxury-houses-with-yellow-light-in-modern-villa-at-night-01-HD-picture.jpg);
     background-size: cover;
     height: auto;
     color: #fff;
     margin-bottom: 100px;
 }
-.signup-content-color-bac{
+.signup-content-color-bac .signin-content-color-bac {
     display: block;
     height: 100%;
     background: rgba(0,0,0,0.7);
     padding: 40px 80px;
 }
-.signup-content #signup-text{
+.signup-content #signup-text .signin-content #signin-text{
     width: 40%;
     float: left;
     margin-top: 10%;
     font-size: 25px;
     margin-bottom: 200px;
 }
-.signup-content #signup{
+.signup-content #signup .signin-content #signin{
     float: right;
     width: 50%;
     margin-bottom: 200px
 }
-.signup-content .clear{
+.signup-content .clear .signin-content .clear{
     clear: both;
 }
-.signup-content #signup-form input{
+.signup-content #signup-form input .signin-content #signin-form input{
     display: inline-block;
     margin: auto;
     margin-top: 20px;
@@ -556,7 +601,7 @@ input::-webkit-input-placeholder {
     border-radius: 5px;
     font-size: 15px;
 }
-.signup-content #signup-form input:nth-child(3){
+.signup-content #signup-form input:nth-child(3) .signin-content #signin-form input:nth-child(3){
     display: block;
     width: 97%;
     margin: 0;
@@ -567,7 +612,7 @@ input::-webkit-input-placeholder {
 .signup-content #signup-form input:nth-child(5){
     float: right;
 }
-.signup-content #signup-form button{
+.signup-content #signup-form button .signin-content #signin-form button{
     display: block;
     padding: 10px;
     width: 120px;
