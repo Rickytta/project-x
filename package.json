@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Rickytta/project-x#readme",
   "dependencies": {
+    "chai": "^4.2.0",
     "express": "^4.17.1",
     "heroku": "^7.26.2",
     "procfile": "^0.1.1",
