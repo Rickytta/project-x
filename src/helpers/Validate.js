@@ -46,7 +46,7 @@ class Validate {
       return true;
     }
     return {
-      isValid: false,
+      isValid: false;
       error: 'Please enter a valid email address',
     };
   }
