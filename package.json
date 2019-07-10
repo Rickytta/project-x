@@ -21,7 +21,9 @@
   "homepage": "https://github.com/Rickytta/project-x#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "heroku": "^7.26.2"
+    "heroku": "^7.26.2",
+    "procfile": "^0.1.1",
+    "travis": "^0.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",

@@ -52,7 +52,7 @@ a{
 .search-input{
     height: 50px;
     border: none;
-    background: none;
+    background-color: whitesmoke ;
     color: var(--white-color);
     padding: 5px;
     box-shadow: none;
@@ -106,8 +106,8 @@ a{
   .title h1{
       font-family: "Fredoka one",cursive;
       font-weight: bold;
-      float: left;
-      margin-bottom: 28px
+      text-align: right;
+      margin-bottom: 10px
   }
   .navigation li{
       float: left;

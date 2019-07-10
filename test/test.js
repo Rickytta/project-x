@@ -1,8 +1,12 @@
-var assert = require('assert');
-describe('Array', function() {
-  describe('#indexOf()', function() {
-    it('should return -1 when the value is not present', function() {
-      assert.equal([1, 2, 3].indexOf(4), -1);
-    });
+
+/* eslint-disable linebreak-style */
+const assert = require('assert');
+
+describe('Array', () => {
+  describe('#indexOf()', () => {
+    it('should return -1 when the value is not present',
+      () => {
+        assert.equal([1, 2, 3].indexOf(4), -1);
+      });
   });
 });
