@@ -1,3 +1,151 @@
-.body{
-    text-align: center
+@/* SIGNUP */
+input::-webkit-input-placeholder {
+    color: #909090;
 }
+.signup-content{
+    background-image: url(../images/houses/luxury-houses-with-yellow-light-in-modern-villa-at-night-01-HD-picture.jpg);
+    background-size: cover;
+    height: auto;
+    color: #fff;
+    margin-bottom: 100px;
+}
+.signup-content-color-bac{
+    display: block;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    padding: 40px 80px;
+}
+.signup-content #signup-text{
+    width: 40%;
+    float: left;
+    margin-top: 10%;
+    font-size: 25px;
+    margin-bottom: 200px;
+}
+.signup-content #signup{
+    float: right;
+    width: 50%;
+    margin-bottom: 200px
+}
+.signup-content .clear{
+    clear: both;
+}
+.signup-content #signup-form input{
+    display: inline-block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 45%;
+    padding: 10px;
+    border: 1px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.signup-content #signup-form input:nth-child(3){
+    display: block;
+    width: 97%;
+    margin: 0;
+}
+.signup-content #signup-form input:nth-child(2){
+    float: right;
+}
+.signup-content #signup-form input:nth-child(5){
+    float: right;
+}
+.signup-content #signup-form button{
+    display: block;
+    padding: 10px;
+    width: 120px;
+    font-size: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+.signup-content #signup-form .social-auth-btn{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #fff;
+    padding: 10px;
+    margin-right: 17px;
+    color: #aaa;
+    border-radius: 5px;
+    text-align: center;
+}
+.signup-content #signup-form .social-auth-btn i{
+    margin-right: 10px;
+}
+.signup-content #signup-form .social-auth-btn .fa-google-plus{
+    color: #DD4B39;
+}
+.signup-content #signup-form .social-auth-btn .fa-facebook{
+    color: #4C69BA;
+}
+.signup-content #signup-form .social-auth-btn .fa-twitter{
+    color: #4AB3F4;
+}
+/*/////////////////////////*/
+
+/*Login*/
+.login-content{
+    width: 40%;
+    margin: auto;
+}
+.login-content #login-text{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.login-content #login-header{
+    margin-bottom: 30px;
+}
+.login-content #login-form input{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    border: 1px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.login-content #login-form button{
+    display: block;
+    padding: 10px;
+    width: 120px;
+    font-size: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+.login-content #login-form .social-auth-btn{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: #fff;
+    padding: 10px;
+    margin-right: 10px;
+    color: #aaa;
+    border-radius: 5px;
+    text-align: center;
+}
+.login-content #login-form .social-auth-btn i{
+    margin-right: 10px;
+}
+.login-content #login-form .social-auth-btn .fa-google-plus{
+    color: #DD4B39;
+}
+.login-content #login-form .social-auth-btn .fa-facebook{
+    color: #4C69BA;
+}
+.login-content #login-form .social-auth-btn .fa-twitter{
+    color: #4AB3F4;
