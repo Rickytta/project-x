@@ -14,7 +14,7 @@
 <body>
 
     <div class="sidebar">
-        <a class="active" href="#home">PropertyLite-Pro</a>
+        <a class="active" href="/index.html">PropertyLite-Pro</a>
         <a href="properties.html">Properties</a>
         <a href="unsold.html">Unsold Properties</a>
         <a href="sold.html">Sold Properties</a>
