@@ -9,8 +9,7 @@
     --white-color: #fff;
 }
 
-*,
-body {
+*body {
     margin: 0;
     padding: 0;
 }
@@ -36,17 +35,18 @@ a {
 }
 
 .top-icon {
-    display: grid;
+    display: flex;
     grid-template-columns: 20px 20px 20px;
-    grid-gap: 50px;
+    grid-gap: 30px;
     margin-top: 8px;
 }
 
 .img-icon img {
-    width: 100%;
+    width: 10%;
 }
 
-.top-search {
+
+/*.top-search {
     position: absolute;
     right: 0;
     margin-top: 5px;
@@ -63,7 +63,7 @@ a {
 .search-input {
     height: 50px;
     border: none;
-    background: none;
+    background: rgba(211, 223, 236, 0.973);
     color: var(--white-color);
     padding: 5px;
     box-shadow: none;
@@ -79,6 +79,7 @@ a {
     width: 15px;
     margin-top: 23px;
 }
+*/
 
  ::-webkit-input-placeholder {
     color: var(--white-color);
@@ -103,11 +104,11 @@ a {
 .top-menu-section {
     position: relative;
     padding: 30px;
-    padding-bottom: 0px;
+    padding-bottom: 30px;
 }
 
 .logo {
-    position: absolute;
+    float: right;
     top: 0;
     width: 60px;
     margin-left: 65px;
@@ -118,23 +119,26 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    align-items: center;
+    align-items: left;
     width: 100%;
 }
 
-.title h1 {
+.title,
+h1 {
     font-family: "Fredoka one", cursive;
     font-weight: bold;
-    float: left;
-    margin-bottom: 28px
+    text-justify: distribute;
+    position: relative;
 }
 
-.navigation li {
+.navigation,
+li {
     float: left;
     margin: 20px;
 }
 
-.navigation a {
+.navigation,
+a {
     color: #000000;
     font-size: 13px;
     font-family: 'comfortaa', cursive;
@@ -147,7 +151,8 @@ a {
     margin-right: 150px!important;
 }
 
-.auth-link a {
+.auth-link,
+a {
     /* background: #000; */
     padding: 15px;
     border-radius: 2px;
@@ -192,20 +197,23 @@ a {
     overflow: hidden;
 }
 
-.slide-image>.imgSlide {
+.slide-image,
+.imgSlide {
     position: relative;
     width: 100%;
     height: 500px;
 }
 
-.slide-image>.imgSlide .slid {
+.slide-image,
+.imgSlide .slid {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 4px;
 }
 
-.slide-image .blog-desc {
+.slide-image,
+.blog-desc {
     color: var(--white-color);
     width: 75%;
     margin: 30px;
@@ -234,7 +242,8 @@ a {
     border-radius: 4px;
 }
 
-.getbtn .moreBtn {
+.getbtn,
+.moreBtn {
     background-color: #a71645;
     color: var(--white-color);
     position: relative;
@@ -314,7 +323,8 @@ a {
     margin-bottom: 100px;
 }
 
-.b-article a {
+.b-article,
+a {
     color: #000000;
 }
 
@@ -408,7 +418,7 @@ a {
     font-family: "comfortaa", cursive;
     text-align: center;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 30px;
     padding-left: 20px;
     padding-right: 20px;
     background: #ddd;
@@ -600,24 +610,53 @@ footer h1 {
     font-family: 'Montserrat', sans-serif
 }
 
-.like h5 {
+.like,
+h5 {
     position: absolute;
     top: 0;
     margin-left: 30px;
 }
 
 
-/* SIGNUP */
+/* SIGNUP  and SIGN IN*/
+
+.container {
+    width: 450px;
+    margin: 30px auto;
+}
+
+.input:focus {
+    border: 2px solid #0f151f;
+}
+
+.btn {
+    width: 100%;
+    background-color: #2776ec;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+span,
+a {
+    text-decoration: none;
+    color: #000;
+}
 
 input::-webkit-input-placeholder {
     color: #909090;
 }
 
 .signup-content {
-    background-image: url(../images/houses/luxury-houses-with-yellow-light-in-modern-villa-at-night-01-HD-picture.jpg);
     background-size: cover;
     height: auto;
-    color: #fff;
+    background-color: rgb(20, 99, 202);
     margin-bottom: 100px;
 }
 
@@ -628,7 +667,8 @@ input::-webkit-input-placeholder {
     padding: 40px 80px;
 }
 
-.signup-content #signup-text {
+.signup-content,
+#signup-text {
     width: 40%;
     float: left;
     margin-top: 10%;
@@ -636,43 +676,55 @@ input::-webkit-input-placeholder {
     margin-bottom: 200px;
 }
 
-.signup-content #signup {
+.signup-content,
+#signup {
     float: right;
     width: 50%;
     margin-bottom: 200px
 }
 
-.signup-content .clear {
+.signup-content,
+.clear {
     clear: both;
 }
 
-.signup-content #signup-form input {
+input {
     display: inline-block;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 45%;
+    width: 100%;
     padding: 10px;
     border: 1px;
     border-radius: 5px;
     font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
 }
 
-.signup-content #signup-form input:nth-child(3) {
+.signup-content,
+#signup-form,
+input:nth-child(3) {
     display: block;
     width: 97%;
     margin: 0;
 }
 
-.signup-content #signup-form input:nth-child(2) {
+.signup-content,
+#signup-form,
+input:nth-child(2) {
     float: right;
 }
 
-.signup-content #signup-form input:nth-child(5) {
+.signup-content,
+#signup-form,
+input:nth-child(5) {
     float: right;
 }
 
-.signup-content #signup-form button {
+.signup-content,
+#signup-form,
+button {
     display: block;
     padding: 10px;
     width: 120px;
@@ -686,7 +738,9 @@ input::-webkit-input-placeholder {
     cursor: pointer;
 }
 
-.signup-content #signup-form .social-auth-btn {
+.signup-content,
+#signup-form,
+.social-auth-btn {
     cursor: pointer;
     text-decoration: none;
     font-size: 18px;
@@ -698,19 +752,30 @@ input::-webkit-input-placeholder {
     text-align: center;
 }
 
-.signup-content #signup-form .social-auth-btn i {
+.signup-content,
+#signup-form,
+.social-auth-btn i {
     margin-right: 10px;
 }
 
-.signup-content #signup-form .social-auth-btn .fa-google-plus {
+.signup-content,
+#signup-form,
+.social-auth-btn,
+.fa-google-plus {
     color: #DD4B39;
 }
 
-.signup-content #signup-form .social-auth-btn .fa-facebook {
+.signup-content,
+#signup-form,
+.social-auth-btn,
+.fa-facebook {
     color: #4C69BA;
 }
 
-.signup-content #signup-form .social-auth-btn .fa-twitter {
+.signup-content,
+#signup-form,
+.social-auth-btn,
+.fa-twitter {
     color: #4AB3F4;
 }
 
@@ -723,18 +788,23 @@ input::-webkit-input-placeholder {
 .login-content {
     width: 40%;
     margin: auto;
+    float: left;
 }
 
-.login-content #login-text {
+.login-content,
+#login-text {
     font-size: 25px;
     margin-bottom: 30px;
 }
 
-.login-content #login-header {
+.login-content,
+#login-header {
     margin-bottom: 30px;
 }
 
-.login-content #login-form input {
+.login-content,
+#login-form,
+input {
     display: block;
     margin: auto;
     margin-top: 20px;
@@ -746,7 +816,9 @@ input::-webkit-input-placeholder {
     font-size: 15px;
 }
 
-.login-content #login-form button {
+.login-content,
+#login-form,
+button {
     display: block;
     padding: 10px;
     width: 120px;
@@ -760,7 +832,9 @@ input::-webkit-input-placeholder {
     cursor: pointer;
 }
 
-.login-content #login-form .social-auth-btn {
+.login-content,
+#login-form,
+.social-auth-btn {
     cursor: pointer;
     text-decoration: none;
     font-size: 15px;
@@ -772,19 +846,31 @@ input::-webkit-input-placeholder {
     text-align: center;
 }
 
-.login-content #login-form .social-auth-btn i {
+.login-content,
+#login-form,
+.social-auth-btn,
+i {
     margin-right: 10px;
 }
 
-.login-content #login-form .social-auth-btn .fa-google-plus {
+.login-content,
+#login-form,
+.social-auth-btn,
+.fa-google-plus {
     color: #DD4B39;
 }
 
-.login-content #login-form .social-auth-btn .fa-facebook {
+.login-content,
+#login-form,
+.social-auth-btn,
+.fa-facebook {
     color: #4C69BA;
 }
 
-.login-content #login-form .social-auth-btn .fa-twitter {
+.login-content,
+#login-form,
+.social-auth-btn,
+.fa-twitter {
     color: #4AB3F4;
 }
 
@@ -1017,5 +1103,6 @@ input::-webkit-input-placeholder {
     font-size: 13px;
 }
 
-
-/* End of styling */
+.follow-info span {
+    display: block;
+}
