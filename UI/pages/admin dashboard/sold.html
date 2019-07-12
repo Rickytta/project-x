@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<<<<<<< HEAD
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Carlos Harerimana">
+
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+=======
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="Carlos Harerimana">
+
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+>>>>>>> f886139894d1a5c457fac173cd5c0e83cceb7800
+</head>
+
+<body>
+
+<<<<<<< HEAD
+    <div class="sidebar">
+        <a href="adminDashboard.html">Admin</a>
+        <a class="active" href="properties.html">properties</a>
+        <a href="unsold.html">Unsold properties</a>
+        <a href="sold.html">Sold properties</a>
+        <a href="flags.html">Flags</a>
+        <a href="../signin.html" class="user-set">Logout</a>
+    </div>
+
+    <div class="content">
+        <ul class="breadcrumb">
+            <li><a href="dashboard.html">Home</a></li>
+            <li><a href="#">Properties</a></li>
+        </ul>
+
+        <div class="table-container">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by location.." title="Type in a Manifacuter">
+            <table id="myTable">
+                <tr>
+                    <th>Location</th>
+                    <th>Size</th>
+                    <th>Type</th>
+                    <th>Price</th>
+                    <th>State</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>Chateau Noir</td>
+                    <td>300sm</td>
+                    <td>Residence </td>
+                    <td>3M</td>
+                    <td>new</td>
+                    <td>unsold</td>
+                    <td><a href="car_detail.html" title="Details"><i class="fa fa-info dinfo das"></i></a><a href="" title="Remove"><i class="fa fa-trash ddanger das"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Chateau Noir</td>
+                    <td>300sm</td>
+                    <td>Residence </td>
+                    <td>3M</td>
+                    <td>new</td>
+                    <td>unsold</td>
+                    <td><a href="car_detail.html" title="Details"><i class="fa fa-info dinfo das"></i></a><a href="" title="Remove"><i class="fa fa-trash ddanger das"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Chateau Noir</td>
+                    <td>300sm</td>
+                    <td>Residence </td>
+                    <td>3M</td>
+                    <td>new</td>
+                    <td>unsold</td>
+                    <td><a href="car_detail.html" title="Details"><i class="fa fa-info dinfo das"></i></a><a href="" title="Remove"><i class="fa fa-trash ddanger das"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Chateau Noir</td>
+                    <td>300sm</td>
+                    <td>Residence </td>
+                    <td>3M</td>
+                    <td>new</td>
+                    <td>unsold</td>
+                    <td><a href="car_detail.html" title="Details"><i class="fa fa-info dinfo das"></i></a><a href="" title="Remove"><i class="fa fa-trash ddanger das"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Chateau Noir</td>
+                    <td>300sm</td>
+                    <td>Residence </td>
+                    <td>3M</td>
+                    <td>new</td>
+                    <td>unsold</td>
+                    <td><a href="car_detail.html" title="Details"><i class="fa fa-info dinfo das"></i></a><a href="" title="Remove"><i class="fa fa-trash ddanger das"></i></a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- script for filtering data -->
+    <script type="text/javascript">
+        function myFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+=======
+  <div class="sidebar">
+    <a href="adminDashboard.html">Admin</a>
+    <a class="active" href="properties.html">properties</a>
+    <a href="unsold.html">Unsold properties</a>
+    <a href="sold.html">Sold properties</a>
+    <a href="flags.html">Flags</a>
+    <a href="../signin.html" class="user-set">Logout</a>
+  </div>
+
+  <div class="content">
+    <ul class="breadcrumb">
+      <li><a href="dashboard.html">Home</a></li>
+      <li><a href="#">Properties</a></li>
+    </ul>
+
+    <div class="table-container">
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by location.."
+        title="Type in a Manifacuter">
+      <table id="myTable">
+        <tr>
+          <th>Location</th>
+          <th>Size</th>
+          <th>Type</th>
+          <th>Price</th>
+          <th>State</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>Chateau Noir</td>
+          <td>300sm</td>
+          <td>Residence </td>
+          <td>3M</td>
+          <td>new</td>
+          <td>unsold</td>
+          <td><a href="car_detail.html" title="Details"><i class="fa fa-info dinfo das"></i></a><a href=""
+              title="Remove"><i class="fa fa-trash ddanger das"></i></a></td>
+        </tr>
+        <tr>
+          <td>Chateau Noir</td>
+          <td>300sm</td>
+          <td>Residence </td>
+          <td>3M</td>
+          <td>new</td>
+          <td>unsold</td>
+          <td><a href="car_detail.html" title="Details"><i class="fa fa-info dinfo das"></i></a><a href=""
+              title="Remove"><i class="fa fa-trash ddanger das"></i></a></td>
+        </tr>
+        <tr>
+          <td>Chateau Noir</td>
+          <td>300sm</td>
+          <td>Residence </td>
+          <td>3M</td>
+          <td>new</td>
+          <td>unsold</td>
+          <td><a href="car_detail.html" title="Details"><i class="fa fa-info dinfo das"></i></a><a href=""
+              title="Remove"><i class="fa fa-trash ddanger das"></i></a></td>
+        </tr>
+        <tr>
+          <td>Chateau Noir</td>
+          <td>300sm</td>
+          <td>Residence </td>
+          <td>3M</td>
+          <td>new</td>
+          <td>unsold</td>
+          <td><a href="car_detail.html" title="Details"><i class="fa fa-info dinfo das"></i></a><a href=""
+              title="Remove"><i class="fa fa-trash ddanger das"></i></a></td>
+        </tr>
+        <tr>
+          <td>Chateau Noir</td>
+          <td>300sm</td>
+          <td>Residence </td>
+          <td>3M</td>
+          <td>new</td>
+          <td>unsold</td>
+          <td><a href="car_detail.html" title="Details"><i class="fa fa-info dinfo das"></i></a><a href=""
+              title="Remove"><i class="fa fa-trash ddanger das"></i></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- script for filtering data -->
+  <script type="text/javascript">
+    function myFunction() {
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+  </script>
+>>>>>>> f886139894d1a5c457fac173cd5c0e83cceb7800
+</body>
+
+</html>

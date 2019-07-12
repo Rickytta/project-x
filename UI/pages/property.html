@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Carlos Harerimana">
+
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../styles/single.css">
+    <link rel="stylesheet" type="text/css" href="../styles/modal.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <a href="home.html">Home</a>
+        <a class="active" href="properties.html">Your Ads</a>
+        <a href="post_ads.html">Post Ad</a>
+        <a href="recieved_orders.html">Recieved Order</a>
+        <a href="requested_orders.html">Requested Order</a>
+        <a href="../signin.html" class="user-set">Logout</a>
+    </div>
+
+    <div class="content">
+        <ul class="breadcrumb">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Cars</a></li>
+        </ul>
+        <h2>My ads</h2>
+
+        <div class="table-container">
+            <table id="myTable">
+                <tr>
+                    <th>Title</th>
+                    <th>size</th>
+                    <th>Type</th>
+                    <th>Price</th>
+                    <th>State</th>
+                    <th>Status</th>
+                    <th>view</th>
+                </tr>
+                <tr>
+                    <td>Yellow Opal</td>
+                    <td>380sm</td>
+                    <td>Flat</td>
+                    <td>78M</td>
+                    <td>new</td>
+                    <td>Available</td>
+                    <td><a href="singleHouse.html" title="Update the Car"><i class="fa fa-edit dsuccess das"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Yellow Opal</td>
+                    <td>380sm</td>
+                    <td>Flat</td>
+                    <td>78M</td>
+                    <td>new</td>
+                    <td>Available</td>
+                    <td><a href="singleHouse.html" title="Update the Car"><i class="fa fa-edit dsuccess das"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Yellow Opal</td>
+                    <td>380sm</td>
+                    <td>Flat</td>
+                    <td>78M</td>
+                    <td>new</td>
+                    <td>Available</td>
+                    <td><a href="singleHouse.html" title="Update the Car"><i class="fa fa-edit dsuccess das"></i></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        </section>
+
+    </div>
+    </div>
+
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form>
+                <label>Update The price</label>
+                <input type="number" name="price" placeholder="New Price">
+                <button type="submit" class="btn success">Update</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script>
+        var modal = document.getElementById('myModal');
+
+        var btn = document.getElementsByClassName("btn");
+
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <!-- toggling mark as sold -->
+    <!-- <script>
+    let sldButton = document.getElementById('Sold');
+
+    sldButton.onclick = function () {
+      document.getElementById('markAsSold').style.display ="block";
+      document.getElementById('Sold').style.display = "none";
+    };
+</script> -->
+</body>
+
+</html>
