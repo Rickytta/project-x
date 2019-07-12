@@ -1,1 +1,21 @@
-console.log('hello world');
+
+$(".login-form").hide();
+$(".login").css("background", "none");
+
+$(".login").click(function(){
+  $(".signup-form").hide();
+  $(".login-form").show();
+  $(".signup").css("background", "none");
+  $(".login").css("background", "#fff");
+});
+
+$(".signup").click(function(){
+  $(".signup-form").show();
+  $(".signin-form").hide();
+  $(".signin").css("background", "none");
+  $(".signup").css("background", "#fff");
+});
+
+$(".btn").click(function(){
+  $(".input").val("");
+});
