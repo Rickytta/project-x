@@ -54,12 +54,10 @@ a {
     margin-right: 20px;
     width: 20%;
 }
-
 .top-search-grid {
     display: grid;
     grid-template-columns: 80% 20%;
 }
-
 .search-input {
     height: 50px;
     border: none;
@@ -74,7 +72,6 @@ a {
     text-transform: capitalize;
     color: #000;
 }
-
 .top-search-grid img {
     width: 15px;
     margin-top: 23px;
