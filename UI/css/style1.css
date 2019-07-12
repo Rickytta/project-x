@@ -2,14 +2,10 @@
 
 /* BASIC */
 
-html {
-    background-image: url('../images/houses/luxury-houses-with-yellow-light-in-modern-villa-at-night-01-HD-picture.jpg');
-    background-size: cover 400%;
-}
-
 body {
     font-family: "Poppins", sans-serif;
     height: 100vh;
+    background-image: url('../images/houses/luxury-houses-with-yellow-light-in-modern-villa-at-night-01-HD-picture.jpg');
 }
 
 .title,
@@ -28,11 +24,9 @@ a {
 }
 
 .top-header {
-    position: relative;
-    /* background:#3616e2db; */
-    background: #3485f0;
-    padding: 20px;
-    padding-left: 50px;
+    background-color: #3485f0;
+    padding: 70px;
+    padding-left: 100px;
 }
 
 .top-icon {
@@ -54,6 +48,11 @@ h2 {
     display: inline-block;
     margin: 40px 8px 10px 8px;
     color: #cccccc;
+}
+
+span {
+    display: block;
+    color: #333;
 }
 
 
@@ -339,4 +338,29 @@ input[type=password]:placeholder {
 
 * {
     box-sizing: border-box;
+}
+
+
+/* Password change*/
+
+.hidden_clip {
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+}
+
+.form__field__wrapper {
+    position: relative;
+}
+
+.show-hide-password {
+    background: 0;
+    border: 0;
+    cursor: pointer;
+    min-height: 60px;
+    min-width: 70px;
+    padding: 18px;
+    position: absolute;
+    right: 0;
+    top: 14px;
 }
