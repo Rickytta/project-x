@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PropertyPro-Lite</title>
+    <link rel="stylesheet" type="text/css" href="../css/style2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="top-header">
+            <div class="title">
+                <h1>PropertyPro-Lite</h1>
+
+            </div>
+        </div>
+        <!-- search bar on the right side -->
+        <div class="top-search">
+            <div class="top-search-grid">
+                <input type="text" name="search" placeholder="search" class="search-input">
+                <img src="../images/icons/search.svg" alt="" class="search-icon">
+            </div>
+        </div>
+        </div>
+        <!-- menu section -->
+        <div class="top-menu-section">
+            <div class="logo">
+                <!-- <img src="./UI/images/icons/world.svg" alt=""> -->
+
+                <div class="navigation">
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="top-search">
+            <div class="top-search-grid">
+                <input type="text" name="search" placeholder="search" class="search-input">
+                <img src="../images/icons/search.svg" alt="" class="search-icon">
+            </div>
+        </div>
+        </div>
+    </header>
+    <!-- Navbar -->
+
+    <section>
+        <div class="sidebar">
+            <div class="profile-section">
+                <h2 class="user-profile">My Profile</h2>
+                <p class="authors-av"><img src="../images/houses/girl.png" alt="Avatar"></p>
+                <a class="active" href="#home">Home</a>
+                <a href="post.html">Post Ad</a>
+                <a href="properties.html">Your Ads</a>
+                <a href="ordersReceived.html">Recieved Order</a>
+                <a href="myOrders.html">Requested Order</a>
+                <a href="../signin.html" class="user-set">Logout</a>
+            </div>
+
+        </div>
+    </section>
+    <div class="content">
+        <ul class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="/property_requests">Property Requests</a>
+                <li>
+                    <li> <a href="/for-rent">For rent</a></li>
+                    <li><a href="/for-sale">For sale</a>
+                        <li>
+                            <li><a href="/for-sale">Contact us</a>
+                                <li>
+        </ul>
+        <h2>Dashboard</h2>
+        <br>
+        <hr>
+
+
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <h3>Your Ads</h3>
+                    <p><span class="badges b-red">13</span></p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <h3>Received Order</h3>
+                    <p><span class="badges b-red">4</span></p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <h3>Requested Order</h3>
+                    <p><span class="badges b-red">8</span></p>
+                </div>
+            </div>
+
+            <div class="blog-desc">
+                <div class="b-article">
+                    <article>
+                        <div class="article-img">
+                            <div class="container"><br>
+                                <img src="../images/avatar.svg" alt="Avatar" class="avatar" style="width:60px" float="left">
+                                <span class="opacity">1 min</span>
+                                <h4>John Doe</h4><br>
+                                <hr class="clear">
+                                <p>Beautiful house located in Ruganda, Price is negotiable. Advert type: Sale <br> Price: 125,000,000 RWF <br> Bedrooms: 5 <br> Total floors: 1 <br> Address: Gasabo , KIMIRONKO , <br> Property type: House Bathrooms: 4 Plot
+                                    size: n/a Living area: n/a Expiry date: 20-12-2019
+                                </p>
+                                <div class="row-padding" style="margin:0 -16px">
+                                    <div class="half">
+                                        <img src="../images/houses/kimironko house.jpg" style="width:50%" alt="Northern Lights" class="margin-bottom">
+                                        <img src="../images/houses/kimironko house1.jpg" style="width:50%" alt="Nature" class="margin-bottom">
+                                    </div>
+                                </div>
+                                <button type="button" class="margin-bottom"><i class="thumbs-up"></i>  Like</button>
+                                <button type="button" class="margin-bottom"><i class="comment"></i>  Comment</button>
+                            </div>
+                        </div>
+                    </article>
+                    <div id="googleMap"></div>
+
+                    <script>
+                        function mymap() {
+                            var mapProp = {
+                                center: new google.maps.LatLng(5.56, -0.12),
+                                zoom: 5,
+                            };
+                            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                        }
+                    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PropertyPro-Lite</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/style2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="top-header">
+            <div class="title">
+                <h1>PropertyPro-Lite</h1>
+
+            </div>
+        </div>
+        <!-- search bar on the right side -->
+        <div class="top-search">
+            <div class="top-search-grid">
+                <input type="text" name="search" placeholder="search" class="search-input">
+                <img src="./images/icons/search.svg" alt="" class="search-icon">
+            </div>
+        </div>
+        </div>
+        <!-- menu section -->
+        <div class="top-menu-section">
+            <div class="logo">
+                <!-- <img src="./UI/images/icons/world.svg" alt=""> -->
+
+                <div class="navigation">
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="top-search">
+            <div class="top-search-grid">
+                <input type="text" name="search" placeholder="search" class="search-input">
+                <img src="./images/icons/search.svg" alt="" class="search-icon">
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="sidebar">
+        <a href="home.html">Home</a>
+        <a href="properties.html">Your Ads</a>
+        <a class="active" href="post.html">Post Ad</a>
+        <a href="ordersReceived.html">Recieved Order</a>
+        <a href="myOrders.html">Requested Order</a>
+        <a href="../signin.html" class="user-set">Logout</a>
+    </div>
+
+    <div class="content">
+        <ul class="breadcrumb">
+            <li><a href="dashboard.html">Home</a></li>
+            <li><a href="singleHouse.html"> Houses</a></li>
+            <li><a href="#">Post</a></li>
+        </ul>
+
+        <h2>Post an advert</h2>
+
+        <div class="form">
+            <form action="" method="post">
+                <div class="form-row">
+                    <div class="col-25">
+                        <label for="reason">House title</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="" name="house Name" placeholder="Centenary House">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-25">
+                        <label for="reason">Size</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="" name="size" placeholder="600sm">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-25">
+                        <label for="reason">Price Rwf</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" id="" name="price" placeholder="eg: 200,000,000">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-25">
+                        <label for="reason">Image</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="file" id="" name="files" accept="image/*">
+                    </div>
+                </div>
+
+
+                <div class="form-row">
+                    <div class="col-25">
+                        <label for="subject">Description</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Describe this house" style="height:150px"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-25">
+                        <label for="reason">Type</label>
+                    </div>
+                    <div class="col-75">
+                        <select name="body_type">
+              <option>Castle</option>
+              <option>Flat</option>
+              <option>Hacienda</option>
+              <option>Estate</option>
+            </select>
+                    </div>
+                </div>
+
+
+                <div class="form-row">
+                    <div class="col-25">
+                        <label for="reason">State</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="radio" name="state" checked="checked" value="new">New
+                        <input type="radio" name="state" value="used">Old
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <input type="submit" value="Publish" class="btn success">
+                    <a accesskey="h" id="home" href="user.html">Home</a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

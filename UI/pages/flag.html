@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PropertyPro-Lite</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <a class="active" href="#home">Home</a>
+        <a href="properties.html">Your Ads</a>
+        <a href="post.html">Post Ad</a>
+        <a href="ordersReceived.html">Orders Received</a>
+        <a href="myOrders.html">My orders</a>
+        <a href="../signin.html" class="user-set">Logout</a>
+    </div>
+
+    <div class="content">
+        <ul class="breadcrumb">
+            <li><a href="dashboard.html">Home</a></li>
+            <li><a href="#">flag</a></li>
+        </ul>
+
+        <h2>Report this Ad</h2>
+
+        <div class="form">
+            <form action="" method="post">
+                <div class="form-row">
+                    <div class="col-25">
+                        <label for="reason">Reason</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="reason" name="reason" placeholder="Write Reason..">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-25">
+                        <label for="subject">Description</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <input type="submit" value="Report" class="btn success">
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
