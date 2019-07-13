@@ -30,10 +30,10 @@ Required Features
 8. User can view all properties of a specific type - 2 bedroom, 3 bedroom, mini flat etc.
 9. User can view a specific property advert.
 Optional Features
-● User can reset password.
-● flag/report a posted AD as fraudulent.
-● User can add multiple pictures to a posted ad.
-● The application should display a Google Map with Marker showing the red-flag or
+1. User can reset password.
+2.  flag/report a posted AD as fraudulent.
+3.  User can add multiple pictures to a posted ad.
+6.  The application should display a Google Map with Marker showing the red-flag or
 intervention location.
 
 Need to install the following to be able to run the project on your local machine.
@@ -55,6 +55,7 @@ This runs the following script on the background processes;
 This command starts the dev server on port 3001.
 
 ## Running the api & tests Locally
+
 To clone this repo: in your terminal => use git clone https://github.com/Rickytta/project-x.git
 Switch to develop branch with => git checkout develop
 Run npm run dev You should see: "Server started successfully! App runing on port 3001.
@@ -63,8 +64,8 @@ Run npm run cover to check the coverage.
 With Postman, test if all endpoints work (Find a list of endpoint in the table at the bottom of this page)
 RESTful API Routes.
 
-## Method	Endpoint	Description
 
+## Method	Endpoint	Description
 
 Author
 RUTH MUTESI REHEMA
