@@ -79,7 +79,4 @@ RUTH MUTESI REHEMA
 Contributors
 Google
  
-<<<<<<< HEAD
-=======
  
->>>>>>> 0c4b97969a8e0103816fdfeeb26ed99ad8599cd9
