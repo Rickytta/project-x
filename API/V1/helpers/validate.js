@@ -1,118 +1,73 @@
-import { error } from '../usingJSObject/data/error';
-import jwt from 'jsonwebtoken';
-import bcrypt from 'bcrypt';
-const getNewId = (array) => {
-
-    if (array.length > 0) {
-        let n;
-        let idValue = array[array.length - 1].id;
-        n = idValue + 1;
-        return n;
-
-    } else {
-        return 234013005001;
+class Validate {
+    /* validating name input */
+    static name(input, required) {
+        if (!input && !required) {
+            return {
+                isValid: true,
+            };
+        }
+        if (input.match(/[a-z]{2}/i) && !input.match(/[0-9!$%*|}{:><?~`_&#^=]/)) {
+            return {
+                isValid: true,
+            };
+        }
+        return {
+            isValid: false,
+            error: 'Please enter valid characters! Only alphabetic characters allowed.',
+        };
     }
 
-};
-
-const getSubId = (array) => {
-
-    if (array.length > 0) {
-        let n;
-        let idValue = array[array.length - 1].id;
-        n = idValue + 1;
-        return n;
-
-    } else {
-        return 43501;
+    /* validating phone inputs */
+    static phone(input, required) {
+        if (!input && !required) {
+            return {
+                isValid: true,
+            };
+        }
+        if (input.match(/[0-9+]{2}/i) && !input.match(/[a-z!$%*|}{:><?~`_&#^=]/i)) {
+            return {
+                isValid: true,
+            };
+        }
+        return {
+            isValid: false,
+            error: 'Please enter a valid phone number',
+        };
     }
 
-};
-const newDate = () => new Date().toLocaleString();
-
-const mustBeInArray = (array, id) => {
-    return new Promise((resolve, reject) => {
-        const row = array.find(r => r.id == id);
-        if (!row) {
-            reject(error.user_404);
+    /* validating email inputs */
+    static email(input, required) {
+        if (!input && !required) {
+            return {
+                isValid: true,
+            };
         }
-        resolve(row);
-    });
-};
-
-const hashPassword = (password) => {
-    return new Promise((resolve, reject) => {
-        bcrypt.hash(password, 10, function(err, hash) {
-            resolve(hash);
-            reject(err);
-        });
-    });
-
-};
-
-const comparePassword = (hashpassword, password) => {
-    return new Promise((resolve, reject) => {
-        bcrypt.compare(password, hashpassword, function(err, bool) {
-            resolve(bool);
-            reject(err);
-        });
-    });
-
-};
-
-
-const adminDb = (array, email) => {
-    // eslint-disable-next-line no-unused-vars
-    return new Promise((resolve, reject) => {
-        const db = array.find(r => r.email === email);
-        resolve(db);
-    });
-};
-
-const typeSearch = (array, type) => {
-    return new Promise((resolve, reject) => {
-        const db = array.filter(r => r.type === type);
-        if (!db) {
-            reject(error.property_404);
+        if (input.match(/\S+@\S+\.\S+/i)) {
+            return true;
         }
-        resolve(db);
-    });
-};
+        return {
+            isValid: false;
+            error: 'Please enter a valid email address',
+        };
+    }
 
-/**
- * isValidEmail helper method
- * @param {string} email
- * @returns {Boolean} True or False
- */
+    /* validating title & location inputs */
+    static title(input, required) {
+        if (!input && !required) {
+            return {
+                isValid: true,
+            };
+        }
+        if (input.match(/[a-z0-9]{2}/i) && !input.match(/[|}{~`^=]/)) {
+            return {
+                isValid: true,
+            };
+        }
+        return {
+            isValid: false,
+            error: 'Please enter valid characters!',
+        };
+    }
+}
 
-const isValidEmail = (email) => {
-    return /\S+@\S+\.\S+/.test(email);
-};
-
-/**
- * Gnerate Token
- * @param {string} id
- * @returns {string} token
- */
-const generateToken = (id) => {
-    return new Promise((resolve, reject) => {
-        const token = jwt.sign({ userId: id }, process.env.SECRET_KEY, { expiresIn: '7d' });
-        if (token) resolve(token);
-        if (!token) reject({ err: 'could not assign a token' });
-    });
-
-};
-
-const emailToken = (rand) => {
-    return new Promise((resolve, reject) => {
-        const token = jwt.sign({ code: rand }, process.env.SECRET_KEY, { expiresIn: '5m' });
-        if (token) resolve(token);
-        if (!token) reject({ err: 'could not assign a token' });
-    });
-
-};
-
-
-
-
-export { getNewId, emailToken, newDate, mustBeInArray, hashPassword, getSubId, adminDb, typeSearch, isValidEmail, generateToken, comparePassword };
+export default Validate;
