@@ -63,9 +63,15 @@ Run npm run test to check if tests are passing.
 Run npm run cover to check the coverage.
 With Postman, test if all endpoints work (Find a list of endpoint in the table at the bottom of this page)
 RESTful API Routes.
+<<<<<<< HEAD
+Method	Endpoint	Description
+
+
+=======
 
 
 ## Method	Endpoint	Description
+>>>>>>> 0c4b97969a8e0103816fdfeeb26ed99ad8599cd9
 
 Author
 RUTH MUTESI REHEMA
