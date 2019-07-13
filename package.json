@@ -4,11 +4,11 @@
     "description": "buying and selling properties",
     "main": "index.js",
     "scripts": {
-        "test": "NODE_ENV=test mocha --compilers js:babel-register src/test/",
+        "test": "NODE_ENV=test mocha --compilers js:babel-register test/test.js",
         "cover": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
-        "build": "babel src/server.js --out-dir build",
-        "start": "babel-node src/server.js",
-        "dev": "NODE_ENV=test mocha babel src/server.js"
+        "build": "babel test/test.js --out-dir build",
+        "start": "babel-node test/test.js",
+        "dev": "NODE_ENV=test mocha babel test/test.js"
     },
     "repository": {
         "type": "git",
