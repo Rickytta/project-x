@@ -80,26 +80,12 @@ Run npm run cover to check the coverage.
 With Postman, test if all endpoints work (Find a list of endpoint in the table at the bottom of this page)
 RESTful API Routes.
 Method	Endpoint	Description
-GET	/api/v1/meetups	List all meetups
-GET	/api/v1/meetups/:meetupId	Query specific meetup
-POST	/api/v1/meetups	Create a meetup
-PUT	/api/v1/meetups/:meetupId	update meetup
-DELETE	/api/v1/meetups/:meetupId	Delete a meetup
-GET	/api/v1/users	List all users
-POST	/api/v1/users	add a new user
-GET	/api/v1/users/:userId	Query specfic user
-PUT	/api/v1/users/:userId	Update user
-DELETE	/api/v1/users/:userId	Delete user
-GET	/api/v1/questions	List all questions
-GET	/api/v1/questions/:questionId	Query specific question
-POST	/api/v1/questions/meetup/meetupId	create a question
-PUT	/api/v1/questions/:questionId	update upvote or downvote
-DELETE	/api/v1/questions/:questionId	delete a question
+
+
 
 Author
 RUTH MUTESI REHEMA
 
 Contributors
 Google
- 
  
