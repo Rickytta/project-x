@@ -9,74 +9,74 @@
 Property Pro Lite is a platform where people can create and/or search properties for sale or rent.
 
 ## Hosted Pages
+[Projext-x-UI]("git+https://github.com/Rickytta/project-x.git")
 
-PROPERTY PRO LITE (Project x)-UI
+[Project-x-API](https://copa1fab.heroku.com)
 
-PROPERTY PRO LITE (Project x)-API
 
 ## Getting started
+
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-Prerequisites
+## Prerequisites
 
-Required Features
-1. User can sign up.
-2. User can sign in.
-3. User (agent) can post a property advert.
-4. User (agent) can update the details of a property advert.
-5. User (agent) can mark his/her posted advert as sold.
-6. User (agent) can delete a property advert.
-7. User can view all properties adverts.
-8. User can view all properties of a specific type - 2 bedroom, 3 bedroom, mini flat etc.
-9. User can view a specific property advert.
-Optional Features
-1. User can reset password.
-2.  flag/report a posted AD as fraudulent.
-3.  User can add multiple pictures to a posted ad.
-6.  The application should display a Google Map with Marker showing the red-flag or
-intervention location.
-
-Need to install the following to be able to run the project on your local machine.
+You need to install the following to be able to run the project on your local machine. 
 
 To check if you have Node.js installed, run this command in your terminal:
 
 node -v
 
-Then
+To confirm that you have npm installed you can run this command in your terminal:
+
+npm -v
+
+## Then 
+
 npm install npm@latest -g
 
-Installing
-Installing this application is fairly straightforward. After cloning this repository to your local environment,CD into the package folder on your favorite terminal... bash, command prompt or the like and run the following:
+## Installing
 
-  > npm install
-This runs the following script on the background processes;
+  Installing this application is fairly straightforward. After cloning this repository to your local environment,CD into the package folder on your favorite terminal... bash, command prompt or the like and run the following:
 
-  > npm install --save-dev babel-watch`
-This command starts the dev server on port 3001.
+      > npm install
+
+  This runs the following script on the background processes;
+
+      > npm install --save-dev babel-watch`
+
+  This command starts the dev server on port 3001.
 
 ## Running the api & tests Locally
 
-To clone this repo: in your terminal => use git clone https://github.com/Rickytta/project-x.git
-Switch to develop branch with => git checkout develop
-Run npm run dev You should see: "Server started successfully! App runing on port 3001.
-Run npm run test to check if tests are passing.
-Run npm run cover to check the coverage.
-With Postman, test if all endpoints work (Find a list of endpoint in the table at the bottom of this page)
-RESTful API Routes.
-<<<<<<< HEAD
-Method	Endpoint	Description
+* To clone this repo: in your terminal => use git clone https://github.com/cop1fab/questioner-final.git
+* Switch to develop branch with => git checkout develop 
+* Run `npm run dev` You should see: "Server started successfully! App runing on port 3001.
+* Run `npm run test` to check if tests are passing.
+* Run `npm run cover` to check the coverage.
+* With Postman, test if all endpoints work (Find a list of endpoint in the table at the bottom of this page)
 
 
-=======
 
+ ## RESTful API Routes.
 
-## Method	Endpoint	Description
->>>>>>> 0c4b97969a8e0103816fdfeeb26ed99ad8599cd9
+| Method | Endpoint | Description
+| --- | --- | -- |
+| GET | /api/v1/property | List all property |
+| GET | /api/v1/property/:propertyId | Query specific property |
+| POST | /api/v1/property | Create a property |
+| PUT | /api/v1/property/:propertyId | update property |
+| DELETE | /api/v1/property/:propertyId | Delete a property |
+| GET | /api/v1/users | List all users |
+| POST | /api/v1/users | add a new user |
+| GET | /api/v1/users/:userId | Query specfic user|
+| PUT | /api/v1/users/:userId | Update user |
+| DELETE | /api/v1/users/:userId | Delete user|
 
-Author
-RUTH MUTESI REHEMA
+# Author
+Ruth Mutesi Rehema
+  
+## Contributors 
 
-Contributors
-Google
+* Google
  
  
